@@ -1,1 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+header {
+  border-bottom: 1px solid #1e293b;
+  position: sticky;
+  top: 0;
+  background: #0b1120;
+  z-index: 10;
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: white;
+}
+
+nav h2 span,
+.hero span {
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 80px);
+  line-height: 1.05;
+  color: white;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  max-width: 650px;
+  font-size: 20px;
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+section > p:not(.tag) {
+  max-width: 750px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 24px;
+  background: #38bdf8;
+  color: #07111f;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.skills,
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills div,
+article {
+  border: 1px solid #1e293b;
+  background: #111827;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.skills p,
+article p {
+  color: #94a3b8;
+}
+
+article span {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.tech {
+  margin-top: 15px;
+  color: #38bdf8 !important;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #1e293b;
+  color: #64748b;
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+
+  .skills,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 70px 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
